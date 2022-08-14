@@ -6,3 +6,20 @@ playVideo.addEventListener('click', () => {
   video.setAttribute('controls', 'controls');
   playVideo.classList.add('video-play--hidden');
 });
+
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  speed: 500,
+  spaceBetween: 20,
+  centeredSlides: true,
+  breakpoints: {
+    576: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+  },
+});

@@ -533,3 +533,17 @@ a {
   height: 100%;
   object-fit: cover;
 }
+
+.swiper-button {
+  width: 60px;
+  height: 60px;
+}
+
+.swiper-button-next {
+  transform: rotate(-180deg);
+}
+
+.services-swiper .swiper-button-prev:after,
+.services-swiper .swiper-button-next:after {
+  content: "";
+}

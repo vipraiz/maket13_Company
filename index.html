@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
   </head>
@@ -190,12 +191,57 @@
       </section>
       <section class="services">
         <h2 class="visually-hidden">Services</h2>
-        <img
-          src="img/services-1.jpg"
-          alt=""
-          class="services__img"
-          aria-hidden="true"
-        />
+        <div class="swiper services-swiper">
+          <div class="swiper-wrapper">
+            <img
+              src="img/services-1.jpg"
+              alt=""
+              class="swiper-slide services__img"
+            />
+            <img
+              src="img/services-1.jpg"
+              alt=""
+              class="swiper-slide services__img"
+            />
+            <img
+              src="img/services-1.jpg"
+              alt=""
+              class="swiper-slide services__img"
+            />
+          </div>
+          <div class="swiper-buttons">
+            <div class="swiper-button swiper-button-prev">
+              <svg
+                viewBox="0 0 60 60"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M40 12.5L22.5 30L40 47.5"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="swiper-button swiper-button-next">
+              <svg
+                viewBox="0 0 60 60"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M40 12.5L22.5 30L40 47.5"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
         <div class="container">
           <ul class="list-reset services__list">
             <li class="services-item two-cols-grid">
@@ -355,6 +401,7 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js" defer></script>
   </body>
-  <script src="js/script.js" defer></script>
 </html>
